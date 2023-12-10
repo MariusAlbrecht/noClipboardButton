@@ -1,9 +1,11 @@
-Kopimi! I encourage copying that denies all consideration of copyright and similar bullshit
+Kopimi! I encourage copying that denies all consideration of copyright and similar bullshit [1]
 [as per the (un)liscense this code is explicitly dedicated to the public domain]
 
-# to install
+--- to install ---
 1. Move the noClipboardButton@marius.albrecht.freenet.de directory into
     ~/.local/share/gnome-shell/extenstions/
 2. Restart your gnome shell [how depends on your desktop, just look it up]
 3. Enable the extension by using the gnome extensions app or the 
     gnome-extensions cli tool
+
+[1] https://kopimi.com/kopimi/ #A-Famous-Quotation-as-a-Kopimist-Creed

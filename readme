@@ -1,14 +1,14 @@
-Kopimi! I encourage copying that denies all consideration of copyright and similar bullshit [1]
+Kopimi[1]! I encourage copying that denies all consideration of copyright and similar bullshit
 [as per the (un)liscense this code is explicitly dedicated to the public domain]
 
 --- to install ---
-1. Move the noClipboardButton@marius.albrecht.freenet.de directory into
+1. Move the noClipboardButton@mariusalbrecht.github.io directory into
     ~/.local/share/gnome-shell/extenstions/
-2. Restart your gnome shell [how depends on your desktop, just look it up]
+2. Restart your gnome shell [how depends on your desktop system, just look it up]
 3. Enable the extension by using the gnome extensions app or the 
-    gnome-extensions cli tool
+    `gnome-extensions` cli tool
 
-basically a clone of the HideActivities extension created by Shay Elkin <shay@shayel.org> and Milan Zink <zeten30@gmail.com> 
+this is basically a clone of the HideActivities extension created by Shay Elkin <shay@shayel.org> and Milan Zink <zeten30@gmail.com> 
 <https://github.com/zeten30/HideActivities>
 
-[1] https://kopimi.com/kopimi/ #A-Famous-Quotation-as-a-Kopimist-Creed
+[1] https://kopimi.com/kopimi

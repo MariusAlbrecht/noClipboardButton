@@ -1,5 +1,5 @@
 /*
- * basically a clone of the HideActivities extension created by Shay Elkin <shay@shayel.org> and updated by zeten30@gmail.com 
+ * basically a clone of the HideActivities extension created by Shay Elkin <shay@shayel.org> and Milan Zink <zeten30@gmail.com> 
  * <https://github.com/zeten30/HideActivities>
  */
 
@@ -9,25 +9,30 @@
  * I published it in the case someone else might get some use out of it despite that fact
  */
 
-const Main = imports.ui.main;
-let monitorsChangedEvent = null;
+import * as Main from "resource:///org/gnome/shell/ui/main.js";
+import { Extension } from 'resource:///org/gnome/shell/extensions/extension.js';
 
-function hideIndicator() {
-    let indicator = Main.panel.statusArea['clipboardIndicator'];
-    if(indicator != null) {
-        indicator.hide();
+await new Promise(r => setTimeout(r, 10 * 1000));
+
+export default class noClipboardButtonExtension extends Extension {
+    indicator
+
+    set_indicator() {
+        this.indicator = Main.panel.statusArea['clipboardIndicator'];
     }
-}
 
-function enable() {
-    monitorsChangedEvent = Main.layoutManager.connect('monitors-changed', hideIndicator);
-    hideIndicator();
-}
+    enable() {
+        this.set_indicator()
+        this.do_sleep(10)
+        if (this.indicator != null) {
+            this.indicator.hide();
+        }
+    }
 
-function disable() {
-    Main.layoutManager.disconnect(monitorsChangedEvent);
-    let indicator = Main.panel.statusArea['clipboardIndicator'];
-    if(indicator != null) {
-        indicator.show();
+    disable() {
+        this.set_indicator()
+        if (this.indicator != null) {
+            this.indicator.show();
+        }
     }
 }

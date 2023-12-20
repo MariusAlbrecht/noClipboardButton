@@ -2,10 +2,9 @@ Kopimi[1]! I encourage copying that denies all consideration of copyright and si
 [as per the (un)liscense this code is explicitly dedicated to the public domain]
 
 --- to install ---
-1. Put the contents of this repository into a `noClipboardButton@mariusalbrecht.github.io` 
-    directory and copy that into ~/.local/share/gnome-shell/extenstions/
-2. Restart your gnome shell [how depends on your desktop system, just look it up]
-3. Enable the extension by using the gnome extensions app or the 
+ 1. Put the contents of this repository into `~/.local/share/gnome-shell/extenstions/noClipboardButton@mariusalbrecht.github.io`
+ 2. Restart your gnome shell [how depends on your desktop system, just look it up]
+ 3. Enable the extension by using the gnome extensions app or the 
     `gnome-extensions` cli tool
 
 this is basically a clone of the HideActivities extension created 
